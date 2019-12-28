@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo</title>
+    <link rel="stylesheet" type="text/css" href="css/fases.css">
+    <script type="text/javascript" src="js/fases.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+<body>
+
+
+    
+<div class="palcofase01">
+         
+    <img hidden src="img/fase01.gif" id="gif1" class="gif">
+    <video id="videoTutorial" width="530" controls="controls">>
+        <source src="midia/tutorial.mp4" type="video/mp4"><source  type="video/flv"> 
+        </video>
+    <img hidden src="img/fase02.gif" id="gif2" class="gif">
+    <img hidden src="img/fase03.gif" id="gif3" class="gif">
+    <img hidden src="img/fase04.gif" id="gif4" class="gif">
+    <img hidden src="img/fase05.gif" id="gif5" class="gif">
+
+
+    <!-- ---------------------------------TUTO------------------------------------------------------ -->
+
+    <div id="inicioTuto">
+
+        <button class="sair" id="sair2" onclick="sair()">Sair</button>
+
+        <button hidden class="recarregar" id="recarregar" onclick="recarregar()">Voltar</button>
+
+
+
+
+
+
+
+        <button class="tons" id="tons" onclick="tons()">Ver tons</button>
+        <h4 hidden id="acordes">    
+                C - F - G - Em - Am - Dm - G - C<br>
+                Am - Dm - G - C - F - Dm - E - Am<br>
+                E - A - B - G#m - C#m - F#m - B - E<br>
+                F - A# - C - Am - Dm - Gm - C - F<br>
+                G - C - D - Bm - Em - Am - D - G<br>
+                B - E - F# - D#m - G#m - C#m - F# - B<br>
+                A - D - E - C#m - F#m - Bm - E - A<br>
+                Dm - Gm - C - F - A# - Gm - A - Dm</h4>
+
+        <button class="playTuto" id="playTuto" onclick="playTuto()">Play</button>
+
+        <button hidden class="playTuto01" id="playTuto01" onclick="cc()">C</button>
+        <button hidden class="playTuto01" id="playTuto02" onclick="amam()">Am</button>
+        <button hidden class="playTuto01" id="playTuto03" onclick="ee()">E</button>
+        <button hidden class="playTuto01" id="playTuto04" onclick="ff()">F</button>
+        <button hidden class="playTuto01" id="playTuto05" onclick="gg()">G</button>
+        <button hidden class="playTuto01" id="playTuto06" onclick="bb()">B</button>
+        <button hidden class="playTuto01" id="playTuto07" onclick="aa()">A</button>
+        <button hidden class="playTuto01" id="playTuto08" onclick="dmdm()">Dm</button>
+        <button hidden class="recarregar2" id="recarregar2" onclick="recarregar()"><==</button>
+        <br>
+        <button hidden class="stopTuto01" id="stopTuto01" onclick="scc()">C</button>
+        <button hidden class="stopTuto01" id="stopTuto02" onclick="samam()">Am</button>
+        <button hidden class="stopTuto01" id="stopTuto03" onclick="see()">E</button>
+        <button hidden class="stopTuto01" id="stopTuto04" onclick="sff()">F</button>
+        <button hidden class="stopTuto01" id="stopTuto05" onclick="sgg()">G</button>
+        <button hidden class="stopTuto01" id="stopTuto06" onclick="sbb()">B</button>
+        <button hidden class="stopTuto01" id="stopTuto07" onclick="saa()">A</button>
+        <button hidden class="stopTuto01" id="stopTuto08" onclick="sdmdm()">Dm</button> 
+        <button hidden class="jogar" id="jogar" onclick="posTutorial()">Next</button>
+    </div>
+
+        <div>
+
+
+
+        </div>
+    
+
+
+    <!-- ---------------------------------FASE01------------------------------------------------------ -->
+
+    <div id="botoes01">
+    <button hidden class="btnfase01" id="btnfase01" onclick="botao01('resposta01')">C</button>
+    <button hidden class="btn2fase01" id="btn2fase01" onclick="botao01('resposta02')">Am</button>
+    <button hidden class="btn3fase01" id="btn3fase01" onclick="botao01('resposta03')">E</button>
+    <button hidden class="btn4fase01" id="btn4fase01" onclick="botao01('resposta04')">F#</button>
+    <button hidden class="btn5fase01" id="btn5fase01" onclick="botao01('resposta05')">Gm</button>
+    </div>
+
+
+    <!-- ---------------------------------FASE02------------------------------------------------------ -->
+
+    <div id="botoes02">
+        <button hidden class="btnfase02" id="btnfase02" onclick="botao01('resposta21')">G</button>
+        <button hidden class="btn2fase02" id="btn2fase02" onclick="botao01('resposta22')">Em</button>
+        <button hidden class="btn3fase02" id="btn3fase02" onclick="botao01('resposta23')">C</button>
+        <button hidden class="btn4fase02" id="btn4fase02" onclick="botao01('resposta24')">D#</button>
+        <button hidden class="btn5fase02" id="btn5fase02" onclick="botao01('resposta25')">Am</button>
+    </div>
+
+
+    <!-- ---------------------------------FASE03------------------------------------------------------ -->
+
+    <div id="botoes03">
+        <button hidden class="btnfase03" id="btnfase03" onclick="botao01('resposta31')">A</button>
+        <button hidden class="btn2fase03" id="btn2fase03" onclick="botao01('resposta32')">Gm</button>
+        <button hidden class="btn3fase03" id="btn3fase03" onclick="botao01('resposta33')">F</button>
+        <button hidden class="btn4fase03" id="btn4fase03" onclick="botao01('resposta34')">Bm</button>
+        <button hidden class="btn5fase03" id="btn5fase03" onclick="botao01('resposta35')">E</button>
+    </div>
+
+
+    <!-- ---------------------------------FASE04------------------------------------------------------ -->
+
+    <div id="botoes04">
+        <button hidden class="btnfase04" id="btnfase04" onclick="botao01('resposta41')">Em</button>
+        <button hidden class="btn2fase04" id="btn2fase04" onclick="botao01('resposta42')">Bm</button>
+        <button hidden class="btn3fase04" id="btn3fase04" onclick="botao01('resposta43')">F#</button>
+        <button hidden class="btn4fase04" id="btn4fase04" onclick="botao01('resposta44')">E</button>
+        <button hidden class="btn5fase04" id="btn5fase04" onclick="botao01('resposta45')">Am</button>
+    </div>
+
+    <!-- ---------------------------------FASE05------------------------------------------------------ -->
+
+    <div id="botoes05">
+            <button hidden class="btnfase05" id="btnfase05" onclick="botao01('resposta51')">E</button>
+            <button hidden class="btn2fase05" id="btn2fase05" onclick="botao01('resposta52')">F</button>
+            <button hidden class="btn3fase05" id="btn3fase05" onclick="botao01('resposta53')">Bm</button>
+            <button hidden class="btn4fase05" id="btn4fase05" onclick="botao01('resposta54')">A</button>
+            <button hidden class="btn5fase05" id="btn5fase05" onclick="botao01('resposta55')">C</button>
+            </div>
+        
+        
+            <!-- ---------------------------------FASE06------------------------------------------------------ -->
+        
+            <div id="botoes06">
+                <button hidden class="btnfase06" id="btnfase06" onclick="botao01('resposta61')">B</button>
+                <button hidden class="btn2fase06" id="btn2fase06" onclick="botao01('resposta62')">A</button>
+                <button hidden class="btn3fase06" id="btn3fase06" onclick="botao01('resposta63')">D#</button>
+                <button hidden class="btn4fase06" id="btn4fase06" onclick="botao01('resposta64')">G</button>
+                <button hidden class="btn5fase06" id="btn5fase06" onclick="botao01('resposta65')">C#</button>
+            </div>
+        
+        
+            <!-- ---------------------------------FASE07------------------------------------------------------ -->
+        
+            <div id="botoes07">
+                <button hidden class="btnfase07" id="btnfase07" onclick="botao01('resposta71')">G</button>
+                <button hidden class="btn2fase07" id="btn2fase07" onclick="botao01('resposta72')">Gm</button>
+                <button hidden class="btn3fase07" id="btn3fase07" onclick="botao01('resposta73')">A#</button>
+                <button hidden class="btn4fase07" id="btn4fase07" onclick="botao01('resposta74')">Bm</button>
+                <button hidden class="btn5fase07" id="btn5fase07" onclick="botao01('resposta75')">B</button>
+            </div>
+        
+        
+            <!-- ---------------------------------FASE08------------------------------------------------------ -->
+        
+            <div id="botoes08">
+                <button hidden class="btnfase08" id="btnfase08" onclick="botao01('resposta81')">D</button>
+                <button hidden class="btn2fase08" id="btn2fase08" onclick="botao01('resposta82')">Am</button>
+                <button hidden class="btn3fase08" id="btn3fase08" onclick="botao01('resposta83')">D#</button>
+                <button hidden class="btn4fase08" id="btn4fase08" onclick="botao01('resposta84')">A</button>
+                <button hidden class="btn5fase08" id="btn5fase08" onclick="botao01('resposta85')">Cm</button>
+            </div>
+
+    <!-- ---------------------------------FASE09------------------------------------------------------ -->
+
+    <div id="botoes09">
+            <button hidden class="btnfase09" id="btnfase09" onclick="botao01('resposta91')">A</button>
+            <button hidden class="btn2fase09" id="btn2fase09" onclick="botao01('resposta92')">Em</button>
+            <button hidden class="btn3fase09" id="btn3fase09" onclick="botao01('resposta93')">C#</button>
+            <button hidden class="btn4fase09" id="btn4fase09" onclick="botao01('resposta94')">Dm</button>
+            <button hidden class="btn5fase09" id="btn5fase09" onclick="botao01('resposta95')">Am</button>
+            </div>
+        
+        
+            <!-- ---------------------------------FASE10------------------------------------------------------ -->
+        
+            <div id="botoes10">
+                <button hidden class="btnfase10" id="btnfase10" onclick="botao01('resposta101')">C</button>
+                <button hidden class="btn2fase10" id="btn2fase10" onclick="botao01('resposta102')">Am</button>
+                <button hidden class="btn3fase10" id="btn3fase10" onclick="botao01('resposta103')">G</button>
+                <button hidden class="btn4fase10" id="btn4fase10" onclick="botao01('resposta104')">D</button>
+                <button hidden class="btn5fase10" id="btn5fase10" onclick="botao01('resposta105')">Bm</button>
+            </div>
+        
+        
+            <!-- ---------------------------------FASE11------------------------------------------------------ -->
+        
+            <div id="botoes11">
+                <button hidden class="btnfase11" id="btnfase11" onclick="botao01('resposta111')">C</button>
+                <button hidden class="btn2fase11" id="btn2fase11" onclick="botao01('resposta112')">D</button>
+                <button hidden class="btn3fase11" id="btn3fase11" onclick="botao01('resposta113')">Am</button>
+                <button hidden class="btn4fase11" id="btn4fase11" onclick="botao01('resposta114')">F</button>
+                <button hidden class="btn5fase11" id="btn5fase11" onclick="botao01('resposta115')">Dm</button>
+            </div>
+        
+        
+            <!-- ---------------------------------FASE12------------------------------------------------------ -->
+        
+            <div id="botoes12">
+                <button hidden class="btnfase12" id="btnfase12" onclick="botao01('resposta121')">Am</button>
+                <button hidden class="btn2fase12" id="btn2fase12" onclick="botao01('resposta122')">Dm</button>
+                <button hidden class="btn3fase12" id="btn3fase12" onclick="botao01('resposta123')">G#</button>
+                <button hidden class="btn4fase12" id="btn4fase12" onclick="botao01('resposta124')">G</button>
+                <button hidden class="btn5fase12" id="btn5fase12" onclick="botao01('resposta125')">F</button>
+            </div>
+
+    <div>
+        <button hidden class="sair" id="sair" onclick="sair()">Sair</button>
+
+        <button hidden class="parar" id="parar01" onclick="parar01()">Stop</button>
+        <button hidden class="parar" id="parar02" onclick="parar02()">Stop</button>
+        <button hidden class="parar" id="parar03" onclick="parar03()">Stop</button>
+        <button hidden class="parar" id="parar04" onclick="parar04()">Stop</button>
+        <button hidden class="parar" id="parar05" onclick="parar05()">Stop</button>
+        <button hidden class="parar" id="parar06" onclick="parar06()">Stop</button>
+        <button hidden class="parar" id="parar07" onclick="parar07()">Stop</button>
+        <button hidden class="parar" id="parar08" onclick="parar08()">Stop</button>
+        <button hidden class="parar" id="parar09" onclick="parar09()">Stop</button>
+        <button hidden class="parar" id="parar10" onclick="parar10()">Stop</button>
+        <button hidden class="parar" id="parar11" onclick="parar11()">Stop</button>
+        <button hidden class="parar" id="parar12" onclick="parar12()">Stop</button>
+
+        <button hidden class="tocar" id="tocar01" onclick="tocar01()">Play</button>
+        <button hidden class="tocar" id="tocar02" onclick="tocar02()">Play</button>
+        <button hidden class="tocar" id="tocar03" onclick="tocar03()">Play</button>
+        <button hidden class="tocar" id="tocar04" onclick="tocar04()">Play</button>
+        <button hidden class="tocar" id="tocar05" onclick="tocar05()">Play</button>
+        <button hidden class="tocar" id="tocar06" onclick="tocar06()">Play</button>
+        <button hidden class="tocar" id="tocar07" onclick="tocar07()">Play</button>
+        <button hidden class="tocar" id="tocar08" onclick="tocar08()">Play</button>
+        <button hidden class="tocar" id="tocar09" onclick="tocar09()">Play</button>
+        <button hidden class="tocar" id="tocar10" onclick="tocar10()">Play</button>
+        <button hidden class="tocar" id="tocar11" onclick="tocar11()">Play</button>
+        <button hidden class="tocar" id="tocar12" onclick="tocar12()">Play</button>
+    </div>
+
+
+
+</div>
+
+    
+
+    
+</body>
+</html>

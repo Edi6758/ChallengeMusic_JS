@@ -1,0 +1,422 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/walllpaper.gif");
+    font-family: sans-serif;
+    background-size: cover;
+}
+
+
+/*---------------------------SAIR---------------------------------*/
+
+button.sair{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
+    width:200px;
+    height:50px;
+    background: rgba(5, 136, 196, 0.836);
+    border: 2px solid rgba(5, 136, 196, 0.836);
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+    transition: all 0.75s;
+    border-radius: 8px;
+}
+
+.sair:hover{
+  border: 2px solid rgba(255, 0, 0, 0.842);
+  background-color: rgba(255, 0, 0, 0.842);
+  color: white;
+  font-size: 22px;
+}
+
+/*---------------------------ALINHAMENTO SOBRE---------------------------------*/
+.juntar{
+    margin: 50px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color: rgba(7, 20, 26, 0.911);
+    color: rgba(255, 255, 255, 0.815);
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+/* @-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  } */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+  
+    .juntar {
+      /* -webkit-animation: fadeIn 3s ease-in-out;
+      -moz-animation: fadeIn 3s ease-in-out;
+      -o-animation: fadeIn 3s ease-in-out; */
+      animation: fadeIn 2s ease-in-out;
+    }
+
+/*---------------------------SOBRE---------------------------------*/
+
+div#sobre{
+    position: absolute;
+    left: 25%; /* posiciona na metade da tela */
+    margin-top: -25px;
+    text-align: center;
+    width: 700px;
+    height: 700px;
+}
+
+/*---------------------------PONTUAÇÃO---------------------------------*/
+
+#pontuação{
+  background-image: none;
+  background-color: rgb(18, 127, 216);
+  color: white;
+}  
+
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    background-color: rgb(18, 127, 216);
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+    background-color: rgb(18, 127, 216);
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+    background-color: rgb(18, 127, 216);
+    color: white;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+
+  button.menuRank{
+    margin-bottom: 2px;
+    margin-top: 12px;
+    margin-left: 42.7%;
+    width:200px;
+    height:50px;
+    background: rgb(5, 135, 196);
+    border: 2px solid rgb(5, 135, 196);
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    justify-content: center;
+    transition: all 0.75s;
+    border-radius: 8px;
+}
+
+.menuRank:hover{
+  border: 2px solid rgba(255, 0, 0, 0.842);
+  background-color: rgba(255, 0, 0, 0.842);
+  color: white;
+  font-size: 22px;
+}
+/*---------------------------INICIO---------------------------------*/
+
+.inicio{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+button.menu{
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    font-size: 23px;
+    padding: 8px 0;
+    margin: 8px 0;
+    background: rgb(5, 135, 196);
+    border-radius: 8px;
+    border: 2px solid black;
+    color: white;
+    transition: all 0.75s;
+    display: inline-block;
+    position: relative;
+}
+
+/* button.menu:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+} */
+
+button.menu:hover{
+    background-color: rgb(250, 213, 4);
+    color: black;
+    font-size: 32px;
+}
+
+button.menu:hover :after{
+    opacity: 1;
+    right: 0;
+}
+
+
+button.menu2{
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  font-size: 23px;
+  padding: 8px 0;
+  margin: 8px 0;
+  background: rgb(5, 135, 196);
+  border-radius: 8px;
+  border: 2px solid black;
+  color: white;
+  transition: all 0.75s;
+  display: inline-block;
+  position: relative;
+}
+
+/* button.menu2:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+} */
+
+button.menu2:hover{
+    background-color: rgb(250, 213, 4);
+    color: black;
+    font-size: 32px;
+}
+
+button.menu2:hover :after{
+    opacity: 1;
+    right: 0;
+}
+
+
+button.menu3{
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  font-size: 23px;
+  padding: 8px 0;
+  margin: 8px 0;
+  background: rgb(5, 135, 196);
+  border-radius: 8px;
+  border: 2px solid black;
+  color: white;
+  transition: all 0.75s;
+  display: inline-block;
+  position: relative;
+}
+
+/* button.menu3:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+} */
+
+button.menu3:hover{
+    background-color: rgb(250, 213, 4);
+    color: black;
+    font-size: 32px;
+}
+
+button.menu3:hover :after{
+    opacity: 1;
+    right: 0;
+}
+
+
+button.menu4{
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    font-size: 23px;
+    padding: 8px 0;
+    margin: 8px 0;
+    background: rgb(5, 135, 196);
+    border-radius: 8px;
+    border: 2px solid black;
+    color: white;
+    transition: all 0.75s;
+    display: inline-block;
+    position: relative;
+}
+
+/* button.menu4:after{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+} */
+
+button.menu4:hover{
+    background-color: rgb(250, 213, 4);
+    color: black;
+    font-size: 32px;
+}
+
+button.menu4:hover :after{
+    opacity: 1;
+    right: 0;
+}
+
+button.menu5{
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  font-size: 23px;
+  padding: 8px 0;
+  margin: 8px 0;
+  background: rgb(5, 135, 196);
+  border-radius: 8px;
+  border: 2px solid black;
+  color: white;
+  transition: all 0.75s;
+  display: inline-block;
+  position: relative;
+}
+
+/* button.menu:after{
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+} */
+
+button.menu5:hover{
+  background-color: rgb(250, 213, 4);
+  color: black;
+  font-size: 32px;
+}
+
+button.menu5:hover :after{
+  opacity: 1;
+  right: 0;
+}
+
+/* @-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  } */
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+  .fadeIn {
+    /* -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out; */
+    animation: fadeIn 2s ease-in-out;
+  }

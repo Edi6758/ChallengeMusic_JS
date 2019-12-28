@@ -1,0 +1,42 @@
+
+//------------------SOM------------------------
+
+
+var clicar = new Audio()
+clicar.src = "midia/bleep.mp3"
+
+
+//------------------SAIR/VOLTAR------------------------
+
+function sair(){
+    window.location.href = "index.html"
+}
+
+
+
+//-----------------FASE 01 START-----------------------
+function start(){
+    clicar.play()
+    window.location.href = "cadastro.html"
+
+}
+
+function opçoes(){
+    clicar.play()
+    alert("Opção indisponivel no momento, por favor tente mais tarde")
+
+}
+
+function sobre(){
+    clicar.play()
+    window.location.href = "sobre.html"
+
+}
+
+//--------------------PONTUAÇÃO----------------------------
+var lastname = localStorage.getItem("jso");
+
+document.write(lastname)
+
+
+

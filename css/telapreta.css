@@ -1,0 +1,80 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body{
+    background:black;
+}
+
+/*---------------------INTRODUÇÃO AO TUTORIAL------------------*/
+div#areatutorial{
+    width:700px ;
+    height:655px ;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+button.botaotutorial{
+    position: absolute;
+    top: 0px;
+    left: 310px;
+    width:750px;
+    height:700px;
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 300%;
+}
+
+
+/*---------------------INTRODUÇÃO A FASE01------------------*/
+    
+
+
+div#introfase01{
+    width:700px ;
+    height:655px ;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+button.botaointrofase01{
+    position: absolute;
+    top: 0px;
+    left: 310px;
+    width:750px;
+    height:700px;
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 300%;
+}
+
+/*---------------------DERROTA------------------*/
+
+div#derrota{
+    width:700px ;
+    height:655px ;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+button.botaoderrota{
+    position: absolute;
+    top: 0px;
+    left: 310px;
+    width:750px;
+    height:700px;
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 300%;
+}
+

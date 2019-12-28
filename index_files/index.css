@@ -1,0 +1,190 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/walllpaper.png");
+    font-family: sans-serif;
+    background-size: cover;
+    
+}
+
+/*---------------------------SAIR---------------------------------*/
+
+button.sair{
+    
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    width:200px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff0000;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff0000;
+    justify-content: center;
+}
+
+/*---------------------------ALINHAMENTO---------------------------------*/
+.juntar{
+    margin: 50px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color: white;
+    
+
+}
+
+
+/*---------------------------SOBRE---------------------------------*/
+
+div#sobre{
+    position: absolute;
+    left: 25%; /* posiciona na metade da tela */
+    margin-top: -25px;
+    text-align: center;
+    width: 700px;
+    height: 700px;
+    
+}
+
+/*---------------------------PONTUAÇÃO---------------------------------*/
+
+  
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+/*---------------------------INICIO---------------------------------*/
+
+.inicio{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+button.menu{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #ff007f;
+    background: white;
+}
+
+button.menu2{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #ff007f;
+    background: white;
+}
+
+button.menu3{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #ff007f;
+    background: white;
+}
+
+button.menu4{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #ff007f;
+    background: white;
+}

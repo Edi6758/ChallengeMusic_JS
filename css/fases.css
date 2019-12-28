@@ -1,0 +1,1684 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(../img/fundo.gif) no-repeat;
+    background-size: cover;
+}
+
+/* @-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  } */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+  
+    .fadeIn {
+      /* -webkit-animation: fadeIn 3s ease-in-out;
+      -moz-animation: fadeIn 3s ease-in-out;
+      -o-animation: fadeIn 3s ease-in-out; */
+      animation: fadeIn 2s ease-in-out;
+    }
+/*-----------------------SAIR-----------------------------*/
+.tocar{
+    margin-right: 12px;
+    position: relative;
+    width:100px;
+    height:50px;
+    background: white;
+    border: 2px solid #00ff00;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #00ff00; 
+    align-content: center;
+    transition: all 0.75s;
+}
+
+.tocar:hover{
+    background-color: #00ff00;
+    color: white;
+    border: 2px solid #00ff00;
+}
+
+.parar{
+    margin-right: 12px;
+    position: relative;
+    width:100px;
+    height:50px;
+    background: white;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000; 
+    align-content: center;
+    transition: all 0.75s;
+}
+
+.parar:hover{
+    background-color: #000;
+    color: white;
+    border: 2px solid #000;
+}
+
+.sair{
+    
+    margin-top: 12px;
+    margin-right: 12px;
+    position: relative;
+
+    width:100px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff0000; 
+    align-content: center;
+    transition: all 0.75s;
+}
+
+.sair:hover{
+    background-color: #ff0000;
+    color: white;
+    border: 2px solid #ff0000; 
+}
+
+    h4#acordes{
+        color: aliceblue;
+    }
+
+/*-----------------------RETORNAR-----------------------------*/
+.retornar{
+    
+    margin-right: 12px;
+    position: relative;
+
+    width:100px;
+    height:50px;
+    background: white;
+    border: 2px solid #0000ff;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0000ff;
+    align-content: center;
+}
+
+
+
+
+/*-----------------------TUTORIAL-----------------------------*/
+
+.inicioTuto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* @-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  } */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+  
+    .fadeIn {
+      /* -webkit-animation: fadeIn 3s ease-in-out;
+      -moz-animation: fadeIn 3s ease-in-out;
+      -o-animation: fadeIn 3s ease-in-out; */
+      animation: fadeIn 2s ease-in-out;
+    }
+
+.tons{
+    margin-right: 12px;
+    position: relative;
+    width:100px;
+    height:50px;
+    background: white;
+    border: 2px solid #00ff00;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #00ff00; 
+    align-content: center;
+    transition: all 0.75s;
+}
+
+.tons:hover{
+    background-color: #00ff00;
+    color: white;
+    border: 2px solid #00ff00;
+}
+
+.playTuto{
+    margin-right: 12px;
+    position: relative;
+    width:100px;
+    height:50px;
+    background: white;
+    border: 2px solid #0000ff;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0000ff; 
+    align-content: center;
+    transition: all 0.75s;
+}
+
+.playTuto:hover{
+    background-color: #0000ff;
+    color: white;
+    border: 2px solid #0000ff;
+}
+
+.stopTuto01{ 
+    margin-right: -2px;
+    position: relative;
+    width:50px;
+    height:40px;
+    background: white;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000; 
+    align-content: center;
+    transition: all 0.75s;
+}
+
+.stopTuto01:hover{
+    background-color: #000;
+    color: white;
+    border: 2px solid #000;
+}
+
+.playTuto01{
+    margin-right: -2px;
+    position: relative;
+    width:50px;
+    height:40px;
+    background: white;
+    border: 2px solid #0000ff;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0000ff; 
+    align-content: center;
+    transition: all 0.60s;
+}
+
+.playTuto01:hover{
+    background-color: #0000ff;
+    color: white;
+    border: 2px solid #0000ff;
+}
+
+.jogar{
+    margin-right: 12px;
+    position: relative;
+    width:50px;
+    height:40px;
+    background: white;
+    border: 2px solid #33351a;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #33351a; 
+    align-content: center;
+    transition: all 0.60s;
+}
+
+.jogar:hover{
+    background-color: #33351a;
+    color: white;
+    border: 2px solid #33351a;
+}
+
+.recarregar{
+    margin-right: 12px;
+    position: relative;
+    width:100px;
+    height:50px;
+    background: white;
+    border: 2px solid #0000ff;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0000ff; 
+    align-content: center;
+    transition: all 0.75s;
+}
+
+.recarregar:hover{
+    background-color: #0000ff;
+    color: white;
+    border: 2px solid #0000ff;
+}
+
+.recarregar2{
+    
+    margin-right: -2px;
+    position: relative;
+
+    width:50px;
+    height:40px;
+    background: white;
+    border: 2px solid #0404b1;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #0404b1; 
+    align-content: center;
+    transition: all 0.60s;
+}
+
+.recarregar2:hover{
+    background-color: #0404b1;
+    color: white;
+    border: 2px solid #0404b1;
+}
+
+.sair3{
+    
+    margin-right: -2px;
+    position: relative;
+
+    width:50px;
+    height:40px;
+    background: white;
+    border: 2px solid #ff0000;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #f00; 
+    align-content: center;
+}
+
+
+
+    /*-----------------------FASE O1-----------------------------*/
+
+    .palcofase01{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        
+    }
+    
+    
+    .btnfase01{
+        
+        margin-left: 12px;
+        margin-right: 12px;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        align-content: center;
+        transition: all 0.75s;
+    }
+
+    .btnfase01:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn2fase01{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+
+    .btn2fase01:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn3fase01{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+
+    .btn3fase01:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn4fase01{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+
+    .btn4fase01:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn5fase01{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+
+    .btn5fase01:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+
+    /*-----------------------FASE O2-----------------------------*/
+    
+    
+    .btnfase02{
+        
+        margin-left: 12px;
+        margin-right: 12px;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        align-content: center;
+        transition: all 0.75s;
+    }
+
+    .btnfase02:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn2fase02{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+
+    .btn2fase02:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn3fase02{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+
+    .btn3fase02:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn4fase02{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+
+    .btn4fase02:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn5fase02{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+
+    .btn5fase02:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+
+        /*-----------------------FASE O3-----------------------------*/
+
+        
+        
+        .btnfase03{
+            
+            margin-left: 12px;
+            margin-right: 12px;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            align-content: center;
+            transition: all 0.75s;
+        }
+
+        .btnfase03:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn2fase03{
+            
+            margin-right: 12px;
+            position: relative;
+        
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+
+        .btn2fase03:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn3fase03{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn3fase03:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn4fase03{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn4fase03:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+
+        .btn5fase03{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn5fase03:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+
+
+/*-----------------------FASE O4-----------------------------*/
+
+
+
+.btnfase04{
+    
+    margin-left: 12px;
+    margin-right: 12px;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+    align-content: center;
+}
+
+.btnfase04:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn2fase04{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn2fase04:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn3fase04{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn3fase04:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn4fase04{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn4fase04:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn5fase04{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn5fase04:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+    /*-----------------------FASE O5-----------------------------*/
+
+    
+    .btnfase05{
+        
+        margin-left: 12px;
+        margin-right: 12px;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        align-content: center;
+        transition: all 0.75s;
+    }
+    
+    .btnfase05:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+
+    .btn2fase05{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+        .btn2fase05:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+
+    .btn3fase05{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+        .btn3fase05:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+
+    .btn4fase05{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+        .btn4fase05:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+
+    .btn5fase05{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+        .btn5fase05:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+
+    /*-----------------------FASE O6-----------------------------*/
+
+    
+    
+    .btnfase06{
+        margin-left: 12px;
+        margin-right: 12px;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        align-content: center;
+        transition: all 0.75s;
+    }
+    
+    .btnfase06:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn2fase06{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn2fase06:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn3fase06{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn3fase06:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn4fase06{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn4fase06:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn5fase06{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn5fase06:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+
+
+        /*-----------------------FASE O7-----------------------------*/
+
+
+        
+        
+        .btnfase07{
+            margin-left: 12px;
+            margin-right: 12px;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            align-content: center;
+            transition: all 0.75s;
+        }
+        
+        .btnfase07:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn2fase07{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn2fase07:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn3fase07{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn3fase07:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn4fase07{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn4fase07:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn5fase07{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn5fase07:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+
+
+/*-----------------------FASE O8-----------------------------*/
+
+
+
+.btnfase08{
+    
+    margin-left: 12px;
+    margin-right: 12px;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+    align-content: center;
+}
+
+.btnfase08:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn2fase08{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn2fase08:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn3fase08{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn3fase08:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn4fase08{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn4fase08:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn5fase08{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn5fase08:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+    /*-----------------------FASE O9-----------------------------*/
+
+
+    
+    
+    .btnfase09{
+        margin-left: 12px;
+        margin-right: 12px;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        align-content: center;
+        transition: all 0.75s;
+    }
+    
+    .btnfase09:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn2fase09{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn2fase09:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn3fase09{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn3fase09:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn4fase09{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn4fase09:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn5fase09{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn5fase09:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    
+
+    /*-----------------------FASE 10-----------------------------*/
+
+    
+    .btnfase10{
+        margin-left: 12px;
+        margin-right: 12px;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        align-content: center;
+        transition: all 0.75s;
+    }
+    
+    .btnfase10:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn2fase10{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn2fase10:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn3fase10{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn3fase10:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn4fase10{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn4fase10:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+    .btn5fase10{
+        margin-right: 12px;
+        position: relative;
+        width:90px;
+        height:50px;
+        background: white;
+        border: 2px solid #ff007f;
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #ff007f;
+        transition: all 0.75s;
+    }
+    
+    .btn5fase10:hover{
+        background-color: #ff007f;
+        color: white;
+        border: 2px solid #ff007f;
+    }
+    
+
+
+        /*-----------------------FASE 11-----------------------------*/
+
+        
+        .btnfase11{
+            margin-left: 12px;
+            margin-right: 12px;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            align-content: center;
+            transition: all 0.75s;
+        }
+        
+        .btnfase11:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn2fase11{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn2fase11:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn3fase11{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn3fase11:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn4fase11{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn4fase11:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+        .btn5fase11{
+            margin-right: 12px;
+            position: relative;
+            width:90px;
+            height:50px;
+            background: white;
+            border: 2px solid #ff007f;
+            border-radius: 8px;
+            padding: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            color: #ff007f;
+            transition: all 0.75s;
+        }
+        
+        .btn5fase11:hover{
+            background-color: #ff007f;
+            color: white;
+            border: 2px solid #ff007f;
+        }
+        
+
+
+/*-----------------------FASE 12-----------------------------*/
+
+
+
+.btnfase12{
+    margin-left: 12px;
+    margin-right: 12px;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+    align-content: center;
+}
+
+.btnfase12:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn2fase12{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn2fase12:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn3fase12{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn3fase12:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn4fase12{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn4fase12:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
+
+.btn5fase12{
+    margin-right: 12px;
+    position: relative;
+    width:90px;
+    height:50px;
+    background: white;
+    border: 2px solid #ff007f;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff007f;
+    transition: all 0.75s;
+}
+
+.btn5fase12:hover{
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+}
