@@ -1,1 +1,1 @@
-# sa-primeiro-semestre-senai XD
+# sa-primeiro-semestre-senai
